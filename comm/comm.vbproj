@@ -1,0 +1,278 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>comm.My.MyApplication</StartupObject>
+    <MyType>WindowsForms</MyType>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile>comm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DocumentationFile>comm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineDebug>false</DefineDebug>
+    <DocumentationFile>comm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <DefineDebug>false</DefineDebug>
+    <DocumentationFile>comm.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>9136350_45397.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Speech" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Common\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Update="completed_screen.Designer.vb">
+      <DependentUpon>completed_screen.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Messageform.Designer.vb">
+      <DependentUpon>Messageform.vb</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Update="student\permission_eval.Designer.vb">
+      <DependentUpon>permission_eval.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Evaluate\Reassign_Assessment.Designer.vb">
+      <DependentUpon>Reassign_Assessment.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\dashboard\dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Permission\permission.Designer.vb">
+      <DependentUpon>permission.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Assessment\add_ex.Designer.vb">
+      <DependentUpon>add_ex.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Common\admin_panel.Designer.vb">
+      <DependentUpon>admin_panel.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Assessment\assign.Designer.vb">
+      <DependentUpon>assign.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Evaluate\assign_details.Designer.vb">
+      <DependentUpon>assign_details.vb</DependentUpon>
+    </Compile>
+    <Compile Update="communicationDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>communicationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="communicationDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>communicationDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="communicationDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>communicationDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Evaluate\list_assign_details.Designer.vb">
+      <DependentUpon>list_assign_details.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Assessment\list_ex.Designer.vb">
+      <DependentUpon>list_ex.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Evaluate\list_students.Designer.vb">
+      <DependentUpon>list_students.vb</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="student\record.Designer.vb">
+      <DependentUpon>record.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Assessment\select_by_staff.Designer.vb">
+      <DependentUpon>select_by_staff.vb</DependentUpon>
+    </Compile>
+    <Compile Update="student\student_assign.Designer.vb">
+      <DependentUpon>student_assign.vb</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Assessment\update_ex.Designer.vb">
+      <DependentUpon>update_ex.vb</DependentUpon>
+    </Compile>
+    <Compile Update="Common\login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Update="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Update="student_dashboard.Designer.vb">
+      <DependentUpon>student_dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Update="userdatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>userdatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="userdatabaseDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>userdatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="staff\Valuation\valuation.Designer.vb">
+      <DependentUpon>valuation.vb</DependentUpon>
+    </Compile>
+    <Compile Update="waiting_screen.Designer.vb">
+      <DependentUpon>waiting_screen.vb</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Update="communicationDataSet.xsc">
+      <DependentUpon>communicationDataSet.xsd</DependentUpon>
+    </None>
+    <None Update="communicationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>communicationDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="communicationDataSet.xss">
+      <DependentUpon>communicationDataSet.xsd</DependentUpon>
+    </None>
+    <None Update="communicationDataSet1.xsc">
+      <DependentUpon>communicationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Update="communicationDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>communicationDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="communicationDataSet1.xss">
+      <DependentUpon>communicationDataSet1.xsd</DependentUpon>
+    </None>
+    <None Update="communicationDataSet2.xsc">
+      <DependentUpon>communicationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Update="communicationDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>communicationDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="communicationDataSet2.xss">
+      <DependentUpon>communicationDataSet2.xsd</DependentUpon>
+    </None>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="userdatabaseDataSet.xsc">
+      <DependentUpon>userdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Update="userdatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>userdatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="userdatabaseDataSet.xss">
+      <DependentUpon>userdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Update="userdatabaseDataSet1.xsc">
+      <DependentUpon>userdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Update="userdatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>userdatabaseDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="userdatabaseDataSet1.xss">
+      <DependentUpon>userdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="9136350_45397.ico" />
+    <Content Include="appsettings.json" />
+    <None Include="Resources\60796-robohead-loading %281%29.gif" />
+    <None Include="Resources\giphy %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Speech.v1" Version="1.59.0.2940" />
+    <PackageReference Include="Google.Cloud.Speech.V1" Version="3.3.0" />
+    <PackageReference Include="LibFlacSharp" Version="1.0.4" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="NAudio" Version="2.1.0" />
+    <PackageReference Include="NAudio.Flac" Version="1.0.5702.29018" />
+    <PackageReference Include="NAudio.Lame" Version="2.0.1" />
+    <PackageReference Include="NAudio.WaveFormRenderer" Version="2.0.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="VisioForge.DotNet.Core.TRIAL" Version="15.1.12" />
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.410601">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="record3.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>

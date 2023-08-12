@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Common\admin_panel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="completed_screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Messageform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="My Project\Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Assessment\add_ex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Assessment\assign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Assessment\list_ex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Assessment\select_by_staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Assessment\update_ex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\dashboard\dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Evaluate\assign_details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Evaluate\list_assign_details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Evaluate\list_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Evaluate\Reassign_Assessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Permission\permission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="staff\Valuation\valuation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="student\permission_eval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="student\record.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="student\student_assign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="student_dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="waiting_screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+is_global = true
+build_property.ApplicationManifest = My Project\app.manifest
+build_property.StartupObject = comm.My.MyApplication
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.RootNamespace = comm
+build_property.ProjectDir = C:\Users\Administrator\Desktop\comm\comm\comm\
